@@ -50,16 +50,10 @@ const router = createRouter({
       meta: { layout: 'default' },
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/LoginView.vue'),
-      meta: { layout: 'auth' },
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: () => import('../views/RegisterView.vue'),
-      meta: { layout: 'auth' },
+      path: '/kyc',
+      name: 'kyc',
+      component: () => import('../views/KYCView.vue'),
+      meta: { layout: 'default' },
     },
   ],
 })

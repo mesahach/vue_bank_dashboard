@@ -13,6 +13,16 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <ProfileSettings />
+
+          <div class="card mt-4">
+            <div class="card-header">
+              <h5 class="card-title">KYC Verification</h5>
+            </div>
+            <div class="card-body">
+              <p>Your account is not yet verified. Please complete the KYC process to unlock all features.</p>
+              <router-link to="/kyc" class="btn btn-primary">Start KYC Verification</router-link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -23,6 +33,7 @@
 import { onMounted } from 'vue'
 import { useDashboardStore } from '../stores/dashboard'
 import ProfileSettings from '../components/ProfileSettings.vue'
+import ProfilePictureUpload from '../components/ProfilePictureUpload.vue'
 
 const dashboardStore = useDashboardStore()
 
