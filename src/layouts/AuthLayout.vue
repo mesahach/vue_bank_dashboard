@@ -9,7 +9,7 @@
                 <i class="bi bi-bank" style="font-size: 3rem;"></i>
                 <h1 class="h3 mb-3 fw-normal">Bank Dashboard</h1>
               </div>
-              <slot></slot>
+              <router-view />
             </div>
           </div>
         </div>

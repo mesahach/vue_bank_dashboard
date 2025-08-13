@@ -18,9 +18,7 @@ const layout = computed(() => {
 
 <template>
   <Vue3ToastifyContainer />
-  <component :is="layout">
-    <router-view />
-  </component>
+  <component :is="layout" />
 </template>
 
 <style>
